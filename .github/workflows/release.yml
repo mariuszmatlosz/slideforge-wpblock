@@ -1,9 +1,6 @@
 name: Release
 
 on:
-  pull_request:
-    branches:
-      - master
   push:
     branches:
       - master
@@ -42,13 +39,12 @@ jobs:
       - name: Upload installer
         uses: actions/upload-artifact@v4
         with:
-          name: keen-slider-wpblock
-          path: release/keen-slider-wpblock.zip
+          name: slideforge
+          path: release/slideforge.zip
           if-no-files-found: error
 
       - name: Read plugin version
         id: plugin_version
-        if: github.event_name != 'pull_request'
         run: |
           version="$(sed -n 's/^ \* Version:[[:space:]]*//p' plugin.php | head -n 1 | tr -d '[:space:]')"
           if [ -z "$version" ]; then
@@ -58,11 +54,11 @@ jobs:
           echo "value=$version" >> "$GITHUB_OUTPUT"
 
       - name: Publish the GitHub release
-        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.plugin_version.outputs.value }}
+          name: SlideForge ${{ steps.plugin_version.outputs.value }}
           target_commitish: ${{ github.sha }}
-          files: release/keen-slider-wpblock.zip
+          body_path: .github/RELEASE_NOTES.md
+          files: release/slideforge.zip
           fail_on_unmatched_files: true
-          generate_release_notes: true

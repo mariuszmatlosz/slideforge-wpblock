@@ -16,8 +16,8 @@ export default function Save( { attributes } ) {
 
 	const blockProps = useBlockProps.save( {
 		className: arrows
-			? 'keen-slider-wpblock keen-slider-wpblock--has-arrows'
-			: 'keen-slider-wpblock',
+			? 'slideforge-slider slideforge-slider--has-arrows'
+			: 'slideforge-slider',
 		'data-loop': loop ? 'true' : 'false',
 		'data-center': center ? 'true' : 'false',
 		'data-padding': String( padding ),
@@ -26,7 +26,7 @@ export default function Save( { attributes } ) {
 
 	return (
 		<div { ...blockProps }>
-			<div className="keen-slider-wpblock__container keen-slider">
+			<div className="slideforge-slider__container keen-slider">
 				<InnerBlocks.Content />
 			</div>
 		</div>

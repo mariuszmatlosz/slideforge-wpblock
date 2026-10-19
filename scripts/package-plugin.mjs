@@ -4,7 +4,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const pluginRoot = resolve( dirname( fileURLToPath( import.meta.url ) ), '..' );
-const slug = 'keen-slider-wpblock';
+const slug = 'slideforge';
 const releaseRoot = resolve( pluginRoot, 'release' );
 const pluginDir = resolve( releaseRoot, slug );
 const zipName = `${ slug }.zip`;
@@ -13,6 +13,7 @@ const itemsToPackage = [
 	'plugin.php',
 	'inc',
 	'build',
+	'readme.txt',
 	'LICENSE',
 ];
 
@@ -22,6 +23,7 @@ const requiredEntries = [
 	`${ slug }/build/blocks/slider/block.json`,
 	`${ slug }/build/blocks/slider/view.js`,
 	`${ slug }/build/blocks/slide/block.json`,
+	`${ slug }/readme.txt`,
 	`${ slug }/LICENSE`,
 ];
 

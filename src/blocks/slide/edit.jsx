@@ -2,7 +2,7 @@ import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 
 const TEMPLATE = [
-	[ 'core/paragraph', { placeholder: __( 'Slide content…', 'keen-slider-wpblock' ) } ],
+	[ 'core/paragraph', { placeholder: __( 'Slide content…', 'slideforge' ) } ],
 ];
 
 /**
@@ -10,7 +10,7 @@ const TEMPLATE = [
  */
 export default function Edit() {
 	const blockProps = useBlockProps( {
-		className: 'keen-slider-wpblock__slide keen-slider__slide',
+		className: 'slideforge-slider__slide keen-slider__slide',
 	} );
 
 	return (

@@ -8,6 +8,8 @@ export default [
 			'node_modules/**',
 			'build/**',
 			'release/**',
+			'playwright-report/**',
+			'test-results/**',
 		],
 	},
 	...humanmadeConfig,

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<ruleset name="Keen Slider WPBlock">
+<ruleset name="SlideForge">
 	<description>Human Made minimum coding standards for this plugin.</description>
 
 	<file>plugin.php</file>
@@ -12,7 +12,7 @@
 
 	<config name="minimum_supported_wp_version" value="6.3"/>
 	<config name="testVersion" value="8.0-"/>
-	<config name="text_domain" value="keen-slider-wpblock"/>
+	<config name="text_domain" value="slideforge"/>
 
 	<rule ref="HM-Minimum"/>
 </ruleset>
