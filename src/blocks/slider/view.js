@@ -80,18 +80,18 @@ function createArrowsPlugin() {
 			}
 
 			wrapper = document.createElement( 'div' );
-			wrapper.className = 'keen-slider-wpblock__navigation';
+			wrapper.className = 'slideforge-slider__navigation';
 			slider.container.parentNode.insertBefore( wrapper, slider.container );
 			wrapper.appendChild( slider.container );
 
 			arrowPrevious = createButton(
-				'keen-slider-wpblock__arrow keen-slider-wpblock__arrow--previous',
-				__( 'Previous slide', 'keen-slider-wpblock' ),
+				'slideforge-slider__arrow slideforge-slider__arrow--previous',
+				__( 'Previous slide', 'slideforge' ),
 				() => slider.prev()
 			);
 			arrowNext = createButton(
-				'keen-slider-wpblock__arrow keen-slider-wpblock__arrow--next',
-				__( 'Next slide', 'keen-slider-wpblock' ),
+				'slideforge-slider__arrow slideforge-slider__arrow--next',
+				__( 'Next slide', 'slideforge' ),
 				() => slider.next()
 			);
 
@@ -141,7 +141,7 @@ function createArrowsPlugin() {
  * @param {HTMLElement} element Slider block root.
  */
 function initSlider( element ) {
-	const container = element.querySelector( '.keen-slider-wpblock__container' );
+	const container = element.querySelector( '.slideforge-slider__container' );
 
 	if ( ! container || container.dataset.keenSliderInitialized === 'true' ) {
 		return;
@@ -160,7 +160,7 @@ function initSlider( element ) {
  * Initialize every slider block after the markup is available.
  */
 function initSliders() {
-	document.querySelectorAll( '.wp-block-keen-slider-wpblock-slider' ).forEach( initSlider );
+	document.querySelectorAll( '.wp-block-slideforge-slider' ).forEach( initSlider );
 }
 
 document.addEventListener( 'DOMContentLoaded', initSliders );

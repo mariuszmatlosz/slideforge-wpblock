@@ -1,12 +1,12 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 3,
-	"name": "keen-slider-wpblock/slider",
-	"title": "Keen Slider",
+	"name": "slideforge/slider",
+	"title": "SlideForge",
 	"category": "media",
 	"icon": "slides",
-	"description": "Slider powered by Keen Slider.",
-	"textdomain": "keen-slider-wpblock",
+	"description": "Slider and carousel.",
+	"textdomain": "slideforge",
 	"version": "1.0.0",
 	"attributes": {
 		"loop": {
@@ -30,7 +30,7 @@
 		"html": false,
 		"align": ["wide", "full"]
 	},
-	"allowedBlocks": ["keen-slider-wpblock/slide"],
+	"allowedBlocks": ["slideforge/slide"],
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./editor.css",
 	"style": "file:./style.css",

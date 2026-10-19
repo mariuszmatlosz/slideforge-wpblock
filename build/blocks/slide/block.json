@@ -1,14 +1,14 @@
 {
 	"$schema": "https://json.schemastore.org/block.json",
 	"apiVersion": 3,
-	"name": "keen-slider-wpblock/slide",
+	"name": "slideforge/slide",
 	"title": "Slide",
 	"category": "media",
 	"icon": "format-gallery",
-	"description": "Single slide for Keen Slider.",
-	"textdomain": "keen-slider-wpblock",
+	"description": "Single slide.",
+	"textdomain": "slideforge",
 	"version": "1.0.0",
-	"parent": ["keen-slider-wpblock/slider"],
+	"parent": ["slideforge/slider"],
 	"supports": {
 		"html": false,
 		"reusable": false

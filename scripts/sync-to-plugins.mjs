@@ -3,12 +3,13 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const pluginRoot = resolve( dirname( fileURLToPath( import.meta.url ) ), '..' );
-const targetDir = resolve( pluginRoot, '../wp-content/plugins/keen-slider-wpblock' );
+const targetDir = resolve( pluginRoot, '../wp-content/plugins/slideforge' );
 
 const itemsToSync = [
 	'plugin.php',
 	'inc',
 	'build',
+	'readme.txt',
 	'LICENSE',
 ];
 

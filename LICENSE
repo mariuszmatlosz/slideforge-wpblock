@@ -1,6 +1,26 @@
-MIT License
-
+SlideForge
 Copyright (c) 2026 Marius
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+---
+
+This plugin bundles Keen Slider (https://keen-slider.io) by Eric Beyer.
+Keen Slider remains under the MIT License. That license applies only to
+the bundled library, not to the rest of this plugin.
+
+Copyright (c) 2021 Eric Beyer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -20,12 +40,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
----
-
-This plugin bundles Keen Slider (https://keen-slider.io), which is licensed
-under the MIT License.
-
-Copyright (c) 2021 Eric Beyer
-
-See the Keen Slider license:
-https://github.com/rcbyr/keen-slider/blob/master/LICENSE
+Keen Slider license: https://github.com/rcbyr/keen-slider/blob/master/LICENSE

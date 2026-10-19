@@ -1,6 +1,6 @@
-# Keen Slider Block
+# SlideForge
 
-Standalone WordPress plugin with a Gutenberg block that bootstraps [Keen Slider](https://keen-slider.io) on frontend.
+Gutenberg slider and carousel. The front end runs on [Keen Slider](https://keen-slider.io).
 
 This is meant to be installable on any WP site as a normal plugin. Build is done with Vite, output goes to `build/` and WP reads blocks from there.
 
@@ -26,11 +26,11 @@ Production build:
 pnpm build
 ```
 
-`pnpm build` also syncs the plugin to `wp-content/plugins/keen-slider-wpblock`. Activate it in WP admin.
+`pnpm build` also syncs the plugin to `wp-content/plugins/slideforge`. Activate it in WP admin.
 
 ## Block usage
 
-1. Add **Keen Slider** block in editor.
+1. Add the **SlideForge** block in the editor.
 2. Add **Slide** blocks inside (default one slide is created).
 3. Put any core blocks inside slide (paragraph, image, etc.).
 4. Configure options in sidebar:
@@ -63,7 +63,7 @@ View script bundles `keen-slider` library and initializes sliders on page.
 
 ## License
 
-This plugin is released under the **MIT License** (see [LICENSE](./LICENSE)).
+This plugin is released under the **GPL-2.0-or-later** license (see [LICENSE](./LICENSE)). Keen Slider, the bundled slider engine, stays under the MIT license.
 
 ### Keen Slider credits
 

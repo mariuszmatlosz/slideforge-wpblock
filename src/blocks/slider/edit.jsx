@@ -10,8 +10,8 @@ import {
 } from '@wordpress/components';
 import { __ } from '@wordpress/i18n';
 
-const ALLOWED_BLOCKS = [ 'keen-slider-wpblock/slide' ];
-const TEMPLATE = [ [ 'keen-slider-wpblock/slide' ] ];
+const ALLOWED_BLOCKS = [ 'slideforge/slide' ];
+const TEMPLATE = [ [ 'slideforge/slide' ] ];
 
 /**
  * Edit the slider block and its sidebar settings.
@@ -30,8 +30,8 @@ export default function Edit( { attributes, setAttributes } ) {
 
 	const blockProps = useBlockProps( {
 		className: arrows
-			? 'keen-slider-wpblock keen-slider-wpblock--has-arrows'
-			: 'keen-slider-wpblock',
+			? 'slideforge-slider slideforge-slider--has-arrows'
+			: 'slideforge-slider',
 		'data-loop': loop ? 'true' : 'false',
 		'data-center': center ? 'true' : 'false',
 		'data-padding': String( padding ),
@@ -41,25 +41,25 @@ export default function Edit( { attributes, setAttributes } ) {
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody initialOpen title={ __( 'Slider settings', 'keen-slider-wpblock' ) }>
+				<PanelBody initialOpen title={ __( 'Slider settings', 'slideforge' ) }>
 					<ToggleControl
 						checked={ loop }
-						label={ __( 'Loop', 'keen-slider-wpblock' ) }
+						label={ __( 'Loop', 'slideforge' ) }
 						onChange={ value => setAttributes( { loop: value } ) }
 					/>
 					<ToggleControl
 						checked={ center }
-						label={ __( 'Center position', 'keen-slider-wpblock' ) }
+						label={ __( 'Center position', 'slideforge' ) }
 						onChange={ value => setAttributes( { center: value } ) }
 					/>
 					<ToggleControl
 						checked={ arrows }
-						help={ __( 'Show previous and next navigation arrows.', 'keen-slider-wpblock' ) }
-						label={ __( 'Arrows', 'keen-slider-wpblock' ) }
+						help={ __( 'Show previous and next navigation arrows.', 'slideforge' ) }
+						label={ __( 'Arrows', 'slideforge' ) }
 						onChange={ value => setAttributes( { arrows: value } ) }
 					/>
 					<RangeControl
-						label={ __( 'Padding', 'keen-slider-wpblock' ) }
+						label={ __( 'Padding', 'slideforge' ) }
 						max={ 120 }
 						min={ 0 }
 						step={ 1 }
@@ -70,7 +70,7 @@ export default function Edit( { attributes, setAttributes } ) {
 			</InspectorControls>
 
 			<div { ...blockProps }>
-				<div className="keen-slider-wpblock__container keen-slider">
+				<div className="slideforge-slider__container keen-slider">
 					<InnerBlocks
 						allowedBlocks={ ALLOWED_BLOCKS }
 						renderAppender={ InnerBlocks.ButtonBlockAppender }

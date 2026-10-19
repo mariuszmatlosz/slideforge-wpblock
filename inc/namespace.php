@@ -2,10 +2,10 @@
 /**
  * Register the slider and slide blocks.
  *
- * @package KeenSliderWPBlock
+ * @package SlideForge
  */
 
-namespace KeenSliderWPBlock;
+namespace SlideForge;
 
 const VERSION = '1.0.0';
 
