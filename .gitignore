@@ -1,6 +1,9 @@
 # Release package
 release/
 
+# Generated script versions. The timestamp changes on every build.
+build/**/*.asset.php
+
 # Logs
 logs
 *.log
