@@ -7,6 +7,8 @@
 
 namespace SlideForge;
 
+defined( 'ABSPATH' ) || exit;
+
 const VERSION = '1.0.0';
 
 /**

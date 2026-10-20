@@ -39,7 +39,7 @@ const blocks = [
  */
 function writeAssetFile( targetDir, fileName, dependencies ) {
 	const depsExport = dependencies.map( dep => `'${ dep }'` ).join( ', ' );
-	const contents = `<?php return array('dependencies' => array(${ depsExport }), 'version' => '${ String( Date.now() ) }');\n`;
+	const contents = `<?php\ndefined( 'ABSPATH' ) || exit;\nreturn array('dependencies' => array(${ depsExport }), 'version' => '${ String( Date.now() ) }');\n`;
 
 	writeFileSync( resolve( targetDir, `${ fileName }.asset.php` ), contents );
 }

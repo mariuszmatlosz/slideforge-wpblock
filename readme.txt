@@ -1,8 +1,8 @@
-=== SlideForge – Gutenberg Slider & Carousel ===
-Contributors: mariuszmatlosz 'virgin71' 
+=== SlideForge – Slider & Carousel ===
+Contributors: mariuszmatlosz
 Tags: slider, carousel, gutenberg, slides
 Requires at least: 6.3
-Tested up to: 7.0
+Tested up to: 7.1
 Stable tag: 1.0.0
 Requires PHP: 8.0
 License: GPL-2.0-or-later
